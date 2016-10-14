@@ -1,0 +1,124 @@
+﻿@model IEnumerable<DTDD.Models.sanpham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tensp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.math)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.loai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pgiai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hdh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cpu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ram)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bnho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.camera)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tinhtrang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.soluong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nguoiban.hoten)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tensp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.math)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.loai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pgiai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hdh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cpu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ram)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bnho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.camera)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tinhtrang)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.soluong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nguoiban.hoten)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.masp }) |
+            @Html.ActionLink("Details", "Details", new { id=item.masp }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.masp })
+        </td>
+    </tr>
+}
+
+</table>

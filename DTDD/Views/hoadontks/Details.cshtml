@@ -1,0 +1,43 @@
+﻿@model DTDD.Models.hoadontk
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>hoadontk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ngay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.giatri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.giatri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nguoiban.hoten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nguoiban.hoten)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.mahd }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

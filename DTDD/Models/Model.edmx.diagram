@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d06070fcc7c4aeb945771b04bec3997" Name="Diagram1">
+        <EntityTypeShape EntityType="DTDDModel.cthoadon" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.danhgia" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.giohang" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.hoadon" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.hoadontk" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.nguoiban" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.nguoimua" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DTDDModel.sanpham" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="DTDDModel.FK_cthoadon_hoadon" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_cthoadon_sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_danhgia_nguoiban" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_danhgia_nguoimua" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_giohang_nguoimua" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_giohang_sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_hoadontk_nguoiban" ManuallyRouted="false" />
+        <AssociationConnector Association="DTDDModel.FK_sanpham_nguoiban" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

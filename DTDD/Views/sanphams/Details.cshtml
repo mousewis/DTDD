@@ -1,0 +1,147 @@
+﻿@model DTDD.Models.sanpham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sanpham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tensp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tensp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.math)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.math)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.loai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pgiai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pgiai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hdh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hdh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cpu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cpu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ram)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ram)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bnho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bnho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.camera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.camera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tinhtrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tinhtrang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.soluong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soluong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nguoiban.hoten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nguoiban.hoten)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.masp }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
